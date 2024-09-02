@@ -1,10 +1,8 @@
-variable "APP_DB_URL" {
-  description = "The database URL for the application"
-  type        = string
+resource "random_string" "db_connection_string" {
+  length  = 16
+  special = false
 }
 
-resource "null_resource" "app" {
-  provisioner "local-exec" {
-    command = "echo ${var.APP_DB_URL} > app_db_url.txt"
-  }
+output "DB_CONNECTION_STRING" {
+  value = "postgres://${random_string.db_connection_string.result}@localhost:5432/mydb"
 }

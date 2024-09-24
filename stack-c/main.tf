@@ -1,10 +1,9 @@
 resource "random_password" "example_password" {
-  length            = 16
+  length            = 15
   special           = true
   upper             = true
   lower             = true
   number            = true
-  id                = "none"
 }
 
 terraform {

@@ -8,6 +8,7 @@ resource "random_string" "example" {
 
 output "random_string_value" {
   value     = random_string.example.result
+  sensitive = true
 }
 
 terraform {

@@ -1,4 +1,4 @@
-resource "random_password" "example_password" {
+resource "random_password" "example_password1" {
   length            = 15
   special           = true
   upper             = true

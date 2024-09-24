@@ -4,6 +4,8 @@ resource "random_password" "example_password1" {
   upper             = true
   lower             = true
   number            = true
+
+  sensitive = true
 }
 
 terraform {

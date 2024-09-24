@@ -5,9 +5,6 @@ resource "random_password" "example_password" {
   lower             = true
   number            = true
 }
-provider "opentofu" {
-  # Configure the provider if necessary
-}
 
 terraform {
   required_providers {

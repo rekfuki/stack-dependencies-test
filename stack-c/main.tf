@@ -6,6 +6,10 @@ resource "random_string" "example_password1" {
   number            = true
 }
 
+output "random_string_value" {
+  value     = random_string.example.result
+}
+
 terraform {
   required_providers {
     spacelift = {

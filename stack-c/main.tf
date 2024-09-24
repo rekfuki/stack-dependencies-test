@@ -8,3 +8,12 @@ resource "random_password" "example_password" {
 provider "opentofu" {
   # Configure the provider if necessary
 }
+
+terraform {
+  required_providers {
+    opentofu = {
+      source  = "opentofu/opentofu"
+      version = ">= 1.0.0"
+    }
+  }
+}

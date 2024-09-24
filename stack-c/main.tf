@@ -11,9 +11,9 @@ provider "opentofu" {
 
 terraform {
   required_providers {
-    opentofu = {
-      source  = "opentofu/opentofu"
-      version = ">= 1.0.0"
+    spacelift = {
+      source  = "spacelift-io/spacelift"
+      version = "1.8.0"
     }
   }
 }

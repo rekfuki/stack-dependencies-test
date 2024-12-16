@@ -4,5 +4,5 @@ resource "random_string" "db_connection_string" {
 }
 
 output "DB_CONNECTION_STRING" {
-  value = "postgres://${random_string.db_connection_string.result}@localhost:5432/mydb"
+  value = "random"
 }

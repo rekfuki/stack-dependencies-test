@@ -23,4 +23,3 @@ resource "spacelift_stack_dependency_reference" "reference" {
   output_name         = "DB_CONNECTION_STRING"
   input_name          = "TF_VAR_APP_DB_URL"
 }
-

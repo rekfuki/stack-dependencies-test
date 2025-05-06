@@ -1,0 +1,4 @@
+version: "2"
+
+stack_defaults:
+        terraform_version: "~> 1.5.0"

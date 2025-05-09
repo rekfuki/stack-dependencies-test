@@ -22,8 +22,8 @@ resource "spacelift_stack" "stack-3" {
 }
 
 resource "spacelift_stack_dependency" "dependency" {
-  stack_id            = spacelift_stack.stack-b.id
-  depends_on_stack_id = spacelift_stack.stack-a.id
+  stack_id            = spacelift_stack.stack-2.id
+  depends_on_stack_id = spacelift_stack.stack-1.id
 }
 
 resource "spacelift_stack_dependency_reference" "reference" {

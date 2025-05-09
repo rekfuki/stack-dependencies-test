@@ -1,15 +1,23 @@
-resource "spacelift_stack" "stack-a" {
-  name        = "Dependencies stack A"
+resource "spacelift_stack" "stack-1" {
+  name        = "Dependencies stack 1"
   repository   = "stack-dependencies-test"
   project_root = "stack-a"
   branch       = "main"
 }
 
-resource "spacelift_stack" "stack-b" {
-  name        = "Dependencies stack B"
+resource "spacelift_stack" "stack-2" {
+  name        = "Dependencies stack 2"
   description = "Your first stack managed by Terraform"
   repository   = "stack-dependencies-test"
   project_root = "stack-b"
+  branch       = "main"
+}
+
+resource "spacelift_stack" "stack-3" {
+  name        = "Dependencies stack 3"
+  description = "Your first stack managed by Terraform"
+  repository   = "stack-dependencies-test"
+  project_root = "stack-c"
   branch       = "main"
 }
 

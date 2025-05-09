@@ -1,4 +1,4 @@
 version: "2"
 
 stack_defaults:
-        opentofu_version: "~> 1.8.0"
+        opentofu_version: "1.8.0"

@@ -7,3 +7,7 @@ output "DB_CONNECTION_STRING" {
   value = "random11"
   sensitive   = true
 }
+
+output "dummy" {
+  value = "dummy"
+}

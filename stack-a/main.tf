@@ -9,6 +9,6 @@ output "DB_CONNECTION_STRING" {
 }
 
 output "dummy" {
-  value = "dummy"
+  value = "dummy1"
   sensitive = true
 }

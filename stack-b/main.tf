@@ -12,3 +12,8 @@ output "DB_CONNECTION_STRING_2" {
   value = "random11"
   sensitive   = true
 }
+
+output "DB_CONNECTION_STRING_3" {
+  value = "random11"
+  sensitive   = true
+}

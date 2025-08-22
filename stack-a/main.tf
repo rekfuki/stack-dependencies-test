@@ -8,6 +8,11 @@ output "DB_CONNECTION_STRING" {
   sensitive   = true
 }
 
+output "DB_CONNECTION_STRING" {
+  value = "random11"
+  sensitive   = true
+}
+
 output "dummy" {
   value = "dummy1"
   sensitive = true

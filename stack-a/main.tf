@@ -4,7 +4,7 @@ resource "random_string" "db_connection_string" {
 }
 
 output "DB_CONNECTION_STRING" {
-  value = "random11111111"
+  value = "random"
   sensitive   = true
 }
 

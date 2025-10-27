@@ -3,7 +3,3 @@ resource "random_string" "db_connection_string" {
   special = false
 }
 
-output "DB_CONNECTION_STRING" {
-  value = "random11"
-  sensitive   = true
-}

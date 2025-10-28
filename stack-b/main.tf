@@ -3,3 +3,7 @@ resource "random_string" "db_connection_string" {
   special = false
 }
 
+resource "random_string" "db_connection_string_2" {
+  length  = 16
+  special = false
+}
